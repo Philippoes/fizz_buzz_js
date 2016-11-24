@@ -10,8 +10,10 @@ module.exports = function(config) {
       //'https://code.jquery.com/jquery-2.1.4.js',
       'assets/js/jquery-2.1.1.min.js',
       'assets/js/fizzBuzzer.js',
-      'spec/fizzBuzzer_spec.js', {
-        pattern: 'spec/fixtures/**/*.html',
+      'assets/js/app.js',
+      'spec/fizzBuzzer_spec.js',
+      'spec/ui_spec.js', {
+        pattern: 'spec/fixtures/index.html',
         included: false,
         served: true
       }

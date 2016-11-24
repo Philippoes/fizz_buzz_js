@@ -6,6 +6,7 @@ describe('UI - Index', function() {
   });
 
   afterEach(function() {
+    $('$fizzBuzzInput').val(NaN);
     // If you need to reset some values after each testing
     // you can do it here.
   });

@@ -9,8 +9,8 @@ module.exports = function(config) {
     files: [
       //'https://code.jquery.com/jquery-2.1.4.js',
       'assets/js/jquery-2.1.1.min.js',
-      'assets/js/**/*.js',
-      'spec/**/*_spec.js', {
+      'assets/js/fizzBuzzer.js',
+      'spec/fizzBuzzer_spec.js', {
         pattern: 'spec/fixtures/**/*.html',
         included: false,
         served: true
@@ -86,8 +86,8 @@ module.exports = function(config) {
         flags: ['--no-sandbox']
       }
     }
-  })
+  });
   if (process.env.TRAVIS) {
     config.browsers = ['chromeTravisCI'];
   }
-}
+};

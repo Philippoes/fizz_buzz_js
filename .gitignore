@@ -1,4 +1,5 @@
 node_modules/*
+spec/.DS_store
 coverage/*
 .coveralls.yml
 .DS_Store

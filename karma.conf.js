@@ -7,17 +7,13 @@ module.exports = function(config) {
     frameworks: ['jasmine-jquery', 'jasmine'],
     // list of files / patterns to load in the browser
     files: [
-      //'https://code.jquery.com/jquery-2.1.4.js',
-      'assets/js/jquery-2.1.1.min.js',
-      'assets/js/fizzBuzzer.js',
-      'assets/js/app.js',
-      'spec/fizzBuzzer_spec.js',
-      'spec/ui_spec.js', {
-        pattern: 'spec/fixtures/index.html',
-        included: true,
-        served: true
-      }
-    ],
+    'assets/js/**/*.js',
+    'spec/**/*_spec.js', {
+      pattern: 'spec/fixtures/**/*.html',
+      included: true,
+      served: true
+    }
+  ],
 
     // list of files to exclude
     exclude: [],

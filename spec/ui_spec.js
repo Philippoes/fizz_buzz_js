@@ -17,4 +17,12 @@ describe('UI - Index', function() {
       expect($('#fizzBuzzInput').val()).toEqual ('3');
     });
   });
+
+  describe('It should give you an output message', function(){
+    it('returns fizz', function(){
+      $('#fizzBuzzInput').val(3);
+      $('#checkNumber').click();
+      expect($('#fizzBuzzOutput').text()).toEqual ('fizz');
+    });
+  });
 });

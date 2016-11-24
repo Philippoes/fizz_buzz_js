@@ -14,7 +14,7 @@ module.exports = function(config) {
       'spec/fizzBuzzer_spec.js',
       'spec/ui_spec.js', {
         pattern: 'spec/fixtures/index.html',
-        included: false,
+        included: true,
         served: true
       }
     ],

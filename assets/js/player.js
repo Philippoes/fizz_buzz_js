@@ -3,6 +3,7 @@ function player() {
 }
 
 player.prototype.roll = function(){
+  debugger;
   fizzBuzzer = new fizzBuzzer();
   fizzBuzzer.roll(this);
 };

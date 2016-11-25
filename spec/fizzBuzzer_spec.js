@@ -25,14 +25,14 @@ describe("fizzBuzzer", function() {
   beforeEach(function() {
     player = new player();
   });
-});
 
   it("as a player", function(){
     subject.roll(player);
     expect(player.points).toEqual(jasmine.any(Number));
   });
-
-  it();
-
-
+  it("Displays a roll message", function(){
+    subject.roll(player);
+    expect(player.rollMessage).toEqual(jasmine.any(String));
+  });
+});
 });

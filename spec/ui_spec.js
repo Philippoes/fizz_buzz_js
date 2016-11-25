@@ -23,5 +23,12 @@ describe("UI - Index", function() {
       expect($("#fizzBuzzOutput").text()).toEqual ("fizz");
     });
   });
+
+  describe("You should be able to press player1 button", function(){
+    it (" and give you your roll result", function(){
+      $("#player1roll").click();
+      expect($("#player1result").text()).toEqual (jasmine.any(String));
+    });
+  });
 });
 //MAKE ERROR MESSAGES IN BRANCHES TO TRY IT BRO

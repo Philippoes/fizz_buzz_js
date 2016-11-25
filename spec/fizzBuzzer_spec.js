@@ -20,4 +20,19 @@ describe("fizzBuzzer", function() {
   it("Returns a number if number is not divisible by 3,5 or 15", function(){
     expect(subject.checkNumber(2)).toEqual(2);
   });
+
+  describe("Should be able to roll", function(){
+  beforeEach(function() {
+    player = new player();
+  });
+});
+
+  it("as a player", function(){
+    subject.roll(player);
+    expect(player.points).toEqual(jasmine.any(Number));
+  });
+
+  it();
+
+
 });

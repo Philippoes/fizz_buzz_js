@@ -1,7 +1,8 @@
-function player(attr) {
+function player() {
   this.points = 0;
 }
 
-function addPoints(attr) {
-
-}
+player.prototype.roll = function(){
+  fizzBuzzer = new fizzBuzzer();
+  fizzBuzzer.roll(this);
+};

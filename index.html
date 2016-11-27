@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>Fizz Buzz</title>
-    <!-- <link rel="stylesheet" href="css/app.css"> -->
-   <!-- <link rel="stylesheet" href="css/foundation.min.css"> -->
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/foundation.min.css">
     <script src="assets/js/fizzBuzzer.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
     <script src="assets/js/app.js"></script>
@@ -13,14 +13,23 @@
       $(document).ready(onReadyEvents);
     </script>
   </head>
-  <body>
-    <input type="number" id="fizzBuzzInput" min="0" placeholder="Enter a number">
-    <input type="button" id="checkNumber" value="Check number for fizzbuzz!">
-    <input type="button" id="player1roll" value="Player 1 roll">
-    <input type="button" id="player2roll" value="Player 2 roll">
-    <input type="button" id="checkResults" value="Check who won!">
-    <span id="fizzBuzzOutput"></span>
-    <span id="player1result"></span>
-    <span id="player2result"></span>
-  </body>
+  <body class ="body">
+  <h1 class ="h1"><center>Roll the fizz buzz!</center></h1>
+  <div class="row">
+    <div class="medium-6 medium-centered large-4 large-centered columns">
+      <div class="row column Fizz_buzz">
+        <center><p>Welcome to Philip's fizz buzz page! If you roll a number which is a divisible by 3,5 or 15 you get extra points!</p></center>
+        <center><input type="number" id="fizzBuzzInput" min="0" placeholder="Enter a number"></center>
+        <center><button class="button" id="checkNumber">Check number for fizzbuzz!</button></center>
+        <center><button class="button" id="player1roll">Player 1 roll</button></center>
+        <center><button class="button" id="player2roll">Player 2 roll</button></center>
+    </div>
+  </div>
+</div>
+  <div><center>
+    <br><span id="fizzBuzzOutput"></span><br>
+    <br><span id="player1result"></span><br>
+    <br><span id="player2result"></span><br>
+  </center></div>
+</body>
 </html>
